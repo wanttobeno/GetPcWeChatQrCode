@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A5E9D89D-7CDF-4E12-8B51-2C79EB8918BB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Version</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;VERSION_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>libZxing\Header</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;VERSION_EXPORTS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>libzxing\Header;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateMapFile>false</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="disasm-lib\cpu.h" />
+    <ClInclude Include="disasm-lib\disasm.h" />
+    <ClInclude Include="disasm-lib\disasm_x86.h" />
+    <ClInclude Include="disasm-lib\disasm_x86_tables.h" />
+    <ClInclude Include="disasm-lib\misc.h" />
+    <ClInclude Include="libZxing\Header\BarcodeFormat.h" />
+    <ClInclude Include="libZxing\Header\BinaryBitmap.h" />
+    <ClInclude Include="libZxing\Header\BitArray.h" />
+    <ClInclude Include="libZxing\Header\BitHacks.h" />
+    <ClInclude Include="libZxing\Header\BitMatrix.h" />
+    <ClInclude Include="libZxing\Header\BitSource.h" />
+    <ClInclude Include="libZxing\Header\BitWrapperBinarizer.h" />
+    <ClInclude Include="libZxing\Header\ByteArray.h" />
+    <ClInclude Include="libZxing\Header\ByteMatrix.h" />
+    <ClInclude Include="libZxing\Header\CharacterSet.h" />
+    <ClInclude Include="libZxing\Header\CharacterSetECI.h" />
+    <ClInclude Include="libZxing\Header\CustomData.h" />
+    <ClInclude Include="libZxing\Header\DecodeHints.h" />
+    <ClInclude Include="libZxing\Header\DecoderResult.h" />
+    <ClInclude Include="libZxing\Header\DecodeStatus.h" />
+    <ClInclude Include="libZxing\Header\DetectorResult.h" />
+    <ClInclude Include="libZxing\Header\GenericGF.h" />
+    <ClInclude Include="libZxing\Header\GenericGFPoly.h" />
+    <ClInclude Include="libZxing\Header\GenericLuminanceSource.h" />
+    <ClInclude Include="libZxing\Header\GlobalHistogramBinarizer.h" />
+    <ClInclude Include="libZxing\Header\GridSampler.h" />
+    <ClInclude Include="libZxing\Header\HybridBinarizer.h" />
+    <ClInclude Include="libZxing\Header\LuminanceSource.h" />
+    <ClInclude Include="libZxing\Header\MultiFormatReader.h" />
+    <ClInclude Include="libZxing\Header\MultiFormatWriter.h" />
+    <ClInclude Include="libZxing\Header\PerspectiveTransform.h" />
+    <ClInclude Include="libZxing\Header\Reader.h" />
+    <ClInclude Include="libZxing\Header\ReedSolomonDecoder.h" />
+    <ClInclude Include="libZxing\Header\ReedSolomonEncoder.h" />
+    <ClInclude Include="libZxing\Header\Result.h" />
+    <ClInclude Include="libZxing\Header\ResultMetadata.h" />
+    <ClInclude Include="libZxing\Header\ResultPoint.h" />
+    <ClInclude Include="libZxing\Header\TextDecoder.h" />
+    <ClInclude Include="libZxing\Header\TextEncoder.h" />
+    <ClInclude Include="libZxing\Header\TextUtfEncoding.h" />
+    <ClInclude Include="libZxing\Header\WhiteRectDetector.h" />
+    <ClInclude Include="libZxing\Header\ZXBigInteger.h" />
+    <ClInclude Include="libZxing\Header\ZXConfig.h" />
+    <ClInclude Include="libZxing\Header\ZXContainerAlgorithms.h" />
+    <ClInclude Include="libZxing\Header\ZXNullable.h" />
+    <ClInclude Include="libZxing\Header\ZXNumeric.h" />
+    <ClInclude Include="libZxing\Header\ZXStrConvWorkaround.h" />
+    <ClInclude Include="libZxing\Header\ZXTestSupport.h" />
+    <ClInclude Include="png\lodepng.h" />
+    <ClInclude Include="WechatCode.h" />
+    <ClInclude Include="mhook-lib\mhook.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="disasm-lib\cpu.c" />
+    <ClCompile Include="disasm-lib\disasm.c" />
+    <ClCompile Include="disasm-lib\disasm_x86.c" />
+    <ClCompile Include="disasm-lib\misc.c" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="png\lodepng.cpp" />
+    <ClCompile Include="WechatCode.cpp" />
+    <ClCompile Include="mhook-lib\mhook.cpp" />
+    <ClCompile Include="log.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Version.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

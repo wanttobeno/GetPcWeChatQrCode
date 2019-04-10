@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="disasm">
+      <UniqueIdentifier>{4f301674-c727-486b-9efb-6a3110d46fee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="disasm\mhook">
+      <UniqueIdentifier>{737eb95d-8a26-41da-b6e0-91f5a79b1e9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libZxing">
+      <UniqueIdentifier>{e9a1ece5-4166-43c0-b558-388550addb59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="png">
+      <UniqueIdentifier>{f5127a4b-0a29-44ff-a5b8-6b07f3922f31}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mhook-lib\mhook.h">
+      <Filter>disasm\mhook</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm-lib\cpu.h">
+      <Filter>disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm-lib\disasm.h">
+      <Filter>disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm-lib\disasm_x86.h">
+      <Filter>disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm-lib\disasm_x86_tables.h">
+      <Filter>disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="disasm-lib\misc.h">
+      <Filter>disasm</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\BarcodeFormat.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\BinaryBitmap.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\BitArray.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\BitHacks.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\BitMatrix.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\BitSource.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\BitWrapperBinarizer.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\ByteArray.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\ByteMatrix.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\CharacterSet.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\CharacterSetECI.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\CustomData.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\DecodeHints.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\DecoderResult.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\DecodeStatus.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\DetectorResult.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\GenericGF.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\GenericGFPoly.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\GenericLuminanceSource.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\GlobalHistogramBinarizer.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\GridSampler.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\HybridBinarizer.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\LuminanceSource.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\MultiFormatReader.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\MultiFormatWriter.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\PerspectiveTransform.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\Reader.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\ReedSolomonDecoder.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\ReedSolomonEncoder.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\Result.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\ResultMetadata.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\ResultPoint.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\TextDecoder.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\TextEncoder.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\TextUtfEncoding.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\WhiteRectDetector.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\ZXBigInteger.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\ZXConfig.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\ZXContainerAlgorithms.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\ZXNullable.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\ZXNumeric.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\ZXStrConvWorkaround.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="libZxing\Header\ZXTestSupport.h">
+      <Filter>libZxing</Filter>
+    </ClInclude>
+    <ClInclude Include="png\lodepng.h">
+      <Filter>png</Filter>
+    </ClInclude>
+    <ClInclude Include="WechatCode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mhook-lib\mhook.cpp">
+      <Filter>disasm\mhook</Filter>
+    </ClCompile>
+    <ClCompile Include="disasm-lib\cpu.c">
+      <Filter>disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="disasm-lib\disasm.c">
+      <Filter>disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="disasm-lib\disasm_x86.c">
+      <Filter>disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="disasm-lib\misc.c">
+      <Filter>disasm</Filter>
+    </ClCompile>
+    <ClCompile Include="png\lodepng.cpp">
+      <Filter>png</Filter>
+    </ClCompile>
+    <ClCompile Include="WechatCode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
